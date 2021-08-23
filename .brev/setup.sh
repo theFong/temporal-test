@@ -12,6 +12,7 @@ echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a ~/.bash_profile
 echo "" | sudo tee -a ~/.zshrc
 echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a ~/.zshrc
 rm go1.16.7.linux-amd64.tar.gz
+code-server --install-extension golang.go
 
 ##### Install and Run Temporal Server #####
 export TMPDIR=/home/brev/tmp
