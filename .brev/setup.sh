@@ -14,6 +14,6 @@ echo "export PATH=\$PATH:/usr/local/go/bin" | sudo tee -a ~/.zshrc
 rm go1.16.7.linux-amd64.tar.gz
 
 ##### Install and Run Temporal Server #####
-git clone https://github.com/temporalio/docker-compose.git /home/brev/workspace
 export TMPDIR=/home/brev/tmp
-cd /home/brev/workspace/docker-compose && docker-compose docker-compose up -d && cd -
+git clone https://github.com/temporalio/docker-compose.git /home/brev/workspace/temporal-services
+cd /home/brev/workspace/temporal-services && docker-compose up -d && cd -
